@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Scrollbar Styles */
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #e0e0e0; /* Track color */
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #8b8b8b; /* Thumb color */
+    border-radius: 10px; /* Rounded corners */
+    border: 2px solid #e0e0e0; /* Adds a border around the scrollbar thumb */
+}
+
+/* Ensuring the scroll bar appears at the bottom */
+.custom-scrollbar {
+    display: flex;
+    align-items: center;
+}
+
+body {
+    background-color: rgb(245 243 255);
+    color: #1e293b;
+    transition: background-color 180ms ease, color 180ms ease;
+}
+
+html.dark body {
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+
+html.dark .bg-white,
+html.dark .bg-gray-50,
+html.dark .bg-slate-50 {
+    background-color: #1e293b !important;
+}
+
+html.dark .bg-gray-100,
+html.dark .bg-slate-100,
+html.dark .bg-violet-100 {
+    background-color: #172033 !important;
+}
+
+html.dark .text-black,
+html.dark .text-slate-800,
+html.dark .text-slate-700,
+html.dark .text-slate-600,
+html.dark .text-gray-700,
+html.dark .text-gray-600,
+html.dark .text-gray-500 {
+    color: #e2e8f0 !important;
+}
+
+html.dark .border,
+html.dark .border-b,
+html.dark .border-t,
+html.dark .border-gray-200,
+html.dark .border-slate-200,
+html.dark .border-slate-300 {
+    border-color: #475569 !important;
+}
+
+html.dark input,
+html.dark textarea,
+html.dark select {
+    background-color: #1e293b;
+    color: #f1f5f9;
+    border-color: #475569;
+}
+
+html.dark input::placeholder,
+html.dark textarea::placeholder {
+    color: #94a3b8;
+}
+
+html.dark nav {
+    background-color: #1e3a8a !important;
+}
+
+html.dark nav .bg-white {
+    background-color: #1e293b !important;
+}
+
+html.dark nav .hover\:bg-blue-300:hover {
+    background-color: #334155 !important;
+}
+
+html.dark .divide-gray-200 > :not([hidden]) ~ :not([hidden]) {
+    border-color: #475569;
+}
+
+html.dark .custom-scrollbar::-webkit-scrollbar-track {
+    background: #1e293b;
+}
+
+html.dark .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: #64748b;
+    border-color: #1e293b;
+}
+
